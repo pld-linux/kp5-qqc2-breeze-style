@@ -1,15 +1,15 @@
-%define		kdeplasmaver	5.22.5
+%define		kdeplasmaver	5.23.0
 %define		qtver		5.9.0
 %define		kpname		qqc2-breeze-style
 
 Summary:	QQC2StyleBridge
 Name:		kp5-%{kpname}
-Version:	5.22.5
+Version:	5.23.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	d4bf2ab3d8fe20b5060b3633a0373cc1
+# Source0-md5:	54bdeef00d1a4b7af217f865f8ca9f34
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Quick-controls2-devel >= %{qtver}
@@ -177,7 +177,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/AbstractListItem.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/Separator.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/SwipeListItem.qml
-%{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/Units.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/BackgroundGradient.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/ButtonBackground.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/CheckIndicator.qml
@@ -203,3 +202,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/SpinBoxIndicator.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/SwitchIndicator.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/TextEditBackground.qml
+%{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/impl/Units.qml
+%{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/impl/qmldir
+%{_libdir}/qt5/qml/org/kde/breeze/impl/Units.qml
+%{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/Units.qml
+%{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/qmldir
