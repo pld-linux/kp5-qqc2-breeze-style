@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	5.24.5
+%define		kdeplasmaver	5.25.0
 %define		qtver		5.9.0
 %define		kpname		qqc2-breeze-style
 
 Summary:	QQC2StyleBridge
 Name:		kp5-%{kpname}
-Version:	5.24.5
+Version:	5.25.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
-Source0:	http://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	3213768a9b54727e062bea6480916193
+Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
+# Source0-md5:	bc840aa65a04913c7283cef2c5cd28c2
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Quick-controls2-devel >= %{qtver}
@@ -125,7 +125,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/ToolTip.qml
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/Tumbler.qml
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/VerticalHeaderView.qml
-%{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/impl/BackgroundGradient.qml
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/impl/ButtonBackground.qml
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/impl/CheckIndicator.qml
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/impl/ComboBoxBackground.qml
@@ -146,13 +145,11 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/impl/ScrollHandle.qml
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/impl/SliderGroove.qml
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/impl/SliderHandle.qml
-%{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/impl/SmallShadow.qml
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/impl/SpinBoxIndicator.qml
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/impl/SwitchIndicator.qml
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/impl/TextEditBackground.qml
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/qmldir
 %dir %{_libdir}/qt5/qml/org/kde/breeze/impl
-%{_libdir}/qt5/qml/org/kde/breeze/impl/BackgroundGradient.qml
 %{_libdir}/qt5/qml/org/kde/breeze/impl/ButtonBackground.qml
 %{_libdir}/qt5/qml/org/kde/breeze/impl/CheckIndicator.qml
 %{_libdir}/qt5/qml/org/kde/breeze/impl/ComboBoxBackground.qml
@@ -173,7 +170,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/qt5/qml/org/kde/breeze/impl/ScrollHandle.qml
 %{_libdir}/qt5/qml/org/kde/breeze/impl/SliderGroove.qml
 %{_libdir}/qt5/qml/org/kde/breeze/impl/SliderHandle.qml
-%{_libdir}/qt5/qml/org/kde/breeze/impl/SmallShadow.qml
 %{_libdir}/qt5/qml/org/kde/breeze/impl/SpinBoxIndicator.qml
 %{_libdir}/qt5/qml/org/kde/breeze/impl/SwitchIndicator.qml
 %{_libdir}/qt5/qml/org/kde/breeze/impl/TextEditBackground.qml
@@ -185,7 +181,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/AbstractListItem.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/Separator.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/SwipeListItem.qml
-%{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/BackgroundGradient.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/ButtonBackground.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/CheckIndicator.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/ComboBoxBackground.qml
@@ -206,7 +201,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/ScrollHandle.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/SliderGroove.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/SliderHandle.qml
-%{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/SmallShadow.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/SpinBoxIndicator.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/SwitchIndicator.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/TextEditBackground.qml
@@ -215,3 +209,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/qt5/qml/org/kde/breeze/impl/Units.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/Units.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/qmldir
+%{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/impl/SmallBoxShadow.qml
+%{_libdir}/qt5/qml/org/kde/breeze/impl/SmallBoxShadow.qml
+%{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/SmallBoxShadow.qml
