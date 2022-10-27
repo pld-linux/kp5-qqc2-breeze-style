@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	5.26.1
+%define		kdeplasmaver	5.26.2
 %define		qtver		5.15.2
 %define		kpname		qqc2-breeze-style
 
 Summary:	QQC2StyleBridge
 Name:		kp5-%{kpname}
-Version:	5.26.1
+Version:	5.26.2
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	fac9a5a641319b27ac7fcc6438f4fd2c
+# Source0-md5:	be1bf9f51836526137bebd40e1e78f9e
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Quick-controls2-devel >= %{qtver}
