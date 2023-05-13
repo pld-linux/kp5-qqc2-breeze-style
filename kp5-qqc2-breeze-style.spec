@@ -8,7 +8,7 @@
 Summary:	QQC2StyleBridge
 Name:		kp5-%{kpname}
 Version:	5.27.5
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
@@ -65,6 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%dir %{_libdir}/cmake/KF5QQC2BreezeStyle
 %{_libdir}/cmake/KF5QQC2BreezeStyle/KF5QQC2BreezeStyleConfig.cmake
 %{_libdir}/cmake/KF5QQC2BreezeStyle/KF5QQC2BreezeStyleConfigVersion.cmake
 %{_libdir}/qt5/plugins/kf5/kirigami/org.kde.breeze.so
@@ -125,6 +126,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/ToolTip.qml
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/Tumbler.qml
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/VerticalHeaderView.qml
+%dir %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/impl
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/impl/ButtonBackground.qml
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/impl/CheckIndicator.qml
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/impl/ComboBoxBackground.qml
@@ -149,6 +151,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/impl/SwitchIndicator.qml
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/impl/TextEditBackground.qml
 %{_libdir}/qt5/qml/QtQuick/Controls.2/org.kde.breeze/qmldir
+%dir %{_libdir}/qt5/qml/org/kde/breeze
 %dir %{_libdir}/qt5/qml/org/kde/breeze/impl
 %{_libdir}/qt5/qml/org/kde/breeze/impl/ButtonBackground.qml
 %{_libdir}/qt5/qml/org/kde/breeze/impl/CheckIndicator.qml
