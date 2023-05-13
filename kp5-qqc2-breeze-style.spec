@@ -8,7 +8,7 @@
 Summary:	QQC2StyleBridge
 Name:		kp5-%{kpname}
 Version:	5.27.5
-Release:	2
+Release:	3
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
@@ -184,6 +184,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/AbstractListItem.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/Separator.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/SwipeListItem.qml
+%dir %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/ButtonBackground.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/CheckIndicator.qml
 %{_libdir}/qt5/qml/org/kde/kirigami.2/styles/org.kde.breeze/impl/ComboBoxBackground.qml
